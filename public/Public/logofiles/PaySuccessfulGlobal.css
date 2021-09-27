@@ -1,0 +1,122 @@
+h1,h2,h3,h4,h5,html,body,div,p,img,ul,li,dl,dt,dd,ol,b,em,i,span,strong,input,textarea,button,font,footer,iframe,select,a,header,label{margin:0;padding:0;border:0;box-sizing: border-box;font-style: normal;list-style:none;outline-style: none;appearance: none;-webkit-appearance: none;-moz-appearance: none;-ms-progress-appearance: none;-webkit-tap-highlight-color: transparent;}
+html{font-size:13.333vw;}
+body{background:#f3eddd;font-family:"微软雅黑",Verdana,Arial,Helvetica,sans-serif;padding-top: constant(safe-area-inset-top);padding-left: constant(safe-area-inset-left);padding-right: constant(safe-area-inset-right);padding-bottom: constant(safe-area-inset-bottom);}
+a{text-decoration: none;}
+@media screen and (min-width:415px) and (max-width:639px){html, body{font-size:54px;}}
+@media screen and (min-width:640px) and (max-width:719px){html, body{font-size:64px;}}
+@media screen and (min-width:750px){html, body{font-size:72px;max-width: 700px;margin:0 auto;}}
+/*全局样式*/
+/*头部*/
+header{width:100%;line-height:0.9rem;color:#000;text-align: center;font-size:0.36rem;position:relative;background:#fffcf5;margin-bottom:0.32rem;}
+header a{position:absolute;left:0.25rem;font-size:0.3rem;padding-left:0.28rem;top:0;bottom:0;color:#000;}
+header a:before{content:'';width:0.17rem;height:0.32rem;display: inline-block;background:url(../images/Pay_arrow_left.png) no-repeat;background-size:100%;position:absolute;top:calc(50% - 0.13rem);left:0;}
+
+.PayAfter{width:100%;overflow: hidden;padding:0 0.24rem;}
+
+/*内容*/
+.PayAf_con{width:100%;overflow: hidden;background:#fff;border-radius:5px;padding:0.1rem;}
+.PayAfCon_BJ{width:100%;overflow: hidden;position:relative;padding:0.58rem 0.2rem 0.49rem;}
+.PayAfCon_BJ .PayAfCon_kuang{width:3px;height:100%;background:url(../images/PayAfter_bian_left.png) repeat-y;display: inline-block;position:absolute;top:0;}
+.PayAfCon_BJ .PayAfCon_top{width:100%;height:3px;background:url(../images/PayAfter_bian_top.png) repeat-x;display: inline-block;position:absolute;left:0;}
+.PayAfCon_BJ em.left{left:0;}
+.PayAfCon_BJ em.right{right:0;}
+.PayAfCon_BJ em.top{top:0;}
+.PayAfCon_BJ em.bottom{bottom:0;}
+.PayAfCon_BJ .PayAfCon_jiao{width:0.35rem;height:0.38rem;display: inline-block;background:url(../images/PayAfter_bian_jiao.png) no-repeat;background-size:100%;position:absolute;z-index:2;}
+.PayAfCon_BJ i.jiso_topL{top:0;left:0;}
+.PayAfCon_BJ i.jiso_topR{top:0;right:0;transform: rotateY(180deg);-webkit-transform: rotateY(180deg);-moz-transform: rotateY(180deg);}
+.PayAfCon_BJ i.jiso_bottomL{bottom:0;left:0;transform: rotate(280deg);-webkit-transform: rotate(280deg);-moz-transform: rotate(280deg);}
+.PayAfCon_BJ i.jiso_bottomR{bottom:0;right:0;transform: rotate(180deg);-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);}
+.PayAfCon_img{width:100%;overflow: hidden;}
+.PayAfCon_img img{width:1.1rem;height:1.1rem;margin:0 auto;display: block;}
+.PayAfCon_img p{width:100%;height:auto;text-align: center;font-size:0.32rem;color:#000;margin:0.27rem 0 0.4rem;}
+/*txt*/
+.PayAf_ul{width:100%;overflow: hidden;}
+.PayAf_ul li{width:100%;overflow: hidden;font-size:0.3rem;color:#707070;padding-left:0.3rem;line-height:0.45rem;position:relative;margin-bottom:0.15rem;}
+.PayAf_ul li:before{content: '';width:0.1rem;height:0.1rem;background:#686568;border-radius:50%;display: block;position:absolute;top:0.18rem;left:0;}
+.PayAf_ul li span{color:#e21111;}
+.PayAf_ul li em{float:right;}
+/*Copy*/
+.wxCopy{width:100%;height:0.88rem;margin:0.54rem 0 0.3rem;}
+.wxCopy span{width:75%;height:100%;float: left;border:1px solid #c48a7f;font-size:0.38rem;color:#e21111;line-height:0.88rem;text-align: center;border-radius:3px 0 0 3px;border-right-width:0px;}
+.wxCopy button{width:25%;display: block;float: left;height:100%;line-height:0.88rem;background:#c32102;color:#fff;font-size:0.34rem;letter-spacing: 2px;border-radius:0 3px 3px 0;}
+.OpenWx{margin-bottom:0.15rem;width:100%;height:0.88rem;line-height:0.88rem;text-align: center;font-size:0.36rem;color:#fff;border-radius:3px;letter-spacing: 2px;text-shadow: 0 0 5px rgba(0,0,0,.4);background:-webkit-linear-gradient(#f78974,#e23716);background:-moz-linear-gradient(#f78974,#e23716);background:-o-linear-gradient(#f78974,#e23716);background:linear-gradient(#f78974,#e23716);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f78974',endColorstr='#e23716',GradientType=0 );display: block;}
+/*PayAf_title*/
+.PayAf_title{width:100%;line-height:1.96rem;height:1.96rem;overflow: hidden;text-align: center;font-size:0.38rem;color:#e21111;letter-spacing: 2px;}
+/*PayInfo*/
+.PayInfo{width:100%;overflow: hidden;}
+.PayInfo li{width:100%;overflow: hidden;font-size:0.3rem;line-height:0.5rem;}
+.PayInfo li span{display: block;width:24%;color:#6f6769;float: left;}
+.PayInfo li p{color:#3b3a3a;width:76%;float: left;}
+/*PayBut*/
+.PayBut{width:100%;height:0.88rem;line-height:0.88rem;font-size: 0.36rem;color:#fff;margin-top: 0.4rem;}
+.PayBut span{width:48%;height:100%;float: left;background:-o-linear-gradient(#58c958,#009900);background:-moz-linear-gradient(#58c958,#009900);background:-webkit-linear-gradient(#58c958,#009900);background:linear-gradient(#58c958,#009900);text-align: center;border-radius:3px;letter-spacing: 2px;filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#58c958', endColorstr='#009900',GradientType=0 );}
+.PayBut span:last-child{float: right;background:-webkit-linear-gradient(#fd684c,#e23716);background:-moz-linear-gradient(#fd684c,#e23716);background:-o-linear-gradient(#fd684c,#e23716);background:linear-gradient(#fd684c,#e23716);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd684c', endColorstr='#e23716',GradientType=0 );}
+:root .PayBut span{filter:none;}/*ie9 单独处理滤镜效果*/
+/*fanhui*/
+.fanhui{width:100%;overflow: hidden;margin-top:0.61rem;display: block;}
+.fanhui img{width:100%;float: left;}
+/*footerTxt*/
+.footerTxt{width:100%;height:0.73rem;line-height:0.73rem;font-size:0.36rem;color:#d23037;text-align: center;overflow: hidden;margin-bottom:0.17rem;}
+/* Submit information */
+.PayForm{width:100%;overflow: hidden;}
+.PayForm li{width:100%;height:0.74rem;line-height:0.74rem;font-size:0.3rem;margin-bottom:0.17rem;border-bottom:1px solid #dcdcdc;}
+.PayForm li span{width:24%;height:100%;float: left;line-height:0.74rem;text-align: center;color:#6f6769;}
+.PayForm li .PayForm_con{color: #3b3a3a;width: 76%;float: left;height:100%;}
+.PayForm li .PayForm_con input[type="text"]{width:100%;height:100%;float: left;display: inline-block;font-size:0.3rem;}
+.PayForm li .PayForm_con label{width:25%;height:100%;line-height:0.74rem;display: inline-block;float: left;padding-left:0.4rem;position:relative;}
+.PayForm li .PayForm_con label i{width:0.32rem;height:0.32rem;background:url(../images/PaySelect.png) no-repeat;background-size:0.8rem;display: block;position:absolute;top:calc(50% - 0.15rem);left:0;}
+.on i{background-position:-0.5rem 0 !important;}
+.PayButB{width:100%;height:0.88rem;line-height:0.88rem;text-align: center;font-size:0.36rem;color:#fff;border-radius:3px;letter-spacing: 2px;text-shadow: 0 0 5px rgba(0,0,0,.4);background:-webkit-linear-gradient(#f78974,#e23716);background:-moz-linear-gradient(#f78974,#e23716);background:-o-linear-gradient(#f78974,#e23716);background:linear-gradient(#f78974,#e23716);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f78974',endColorstr='#e23716',GradientType=0 );}
+:root .PayButB{filter:none;}/*ie9 单独处理滤镜效果*/
+/* Mobile phone number display */
+.PhoneNum,.registered{width:100%;height:100vh;position:fixed;top:0;left:0;z-index:100;display: none;}
+.PhoneNum .PN_bj,.registered .re_bj{width:100%;height:100%;background:rgba(0,0,0,.7);}
+.PN_Con,.re_Con{width:6.42rem;/*height:4.3rem;*/background:#fff;border-radius:3px;padding:.5rem 0.34rem;position:absolute;top:30%;left:calc(50% - 3.21rem);overflow: hidden;}
+.PN_Con input[name="sendPhone"]{width:100%;height:0.88rem;border:1px solid #aaaaaa;display: block;text-align: left;padding:0.1rem;font-size:0.3rem;border-radius:3px;}
+.PN_Con button,.re_Con button{width:100%;height:0.88rem;line-height:0.88rem;text-align: center;color:#fff;font-size:0.36rem;letter-spacing: 2px;background:#c32102;border-radius:3px;display: block;margin:0 auto;}
+.re_Con p{color:#3b3a3a;font-size:0.36rem;width:100%;overflow: hidden;text-align: center;}
+.tipsSelect{width:100%;height:auto;font-size:0.3rem;padding-left:0.6rem;position:relative;margin:0.2rem 0;}
+.tipsSelect i{width:0.38rem;height:0.38rem;background:url(../images/payAfterIcon.png) no-repeat;background-size:1rem;display: block;position:absolute;top:calc(50% - 0.19rem);left:0;}
+.tipsSeleOn i{background-position:-0.62rem 0;}
+
+/* --------------  SMS-Messages  -------------- */
+.Sms_Img{width:100%;overflow: hidden;margin-bottom:0.4rem;}
+.Sms_Img img{width:100%;float: left;}
+/*.Sms_message{padding:0.58rem 0.4rem 0.49rem;}*/
+.Sms_message .PayInfo li span{width:26%;}
+.Sms_message .PayInfo li p{width:74%;}
+.Sms_message .Sms_con{padding:0 0.3rem;}
+.Sms_title{width:100%;height:auto;font-size:0.38rem;color:#e21111;text-align: center;font-weight:bold;letter-spacing:1px;}
+.Sms_ordNum{width:100%;font-size:0.3rem;background:#ffcc99;margin:0 auto;text-align: center;padding:0.05rem 0;margin:0.4rem 0;}
+.Sms_ordNum i{color:#e21111;margin-left:0.15rem;}
+.Warm_prompt{font-size:0.3rem;color:#c32102;line-height:0.88rem;width:100%;}
+.Sms_txt{width:90%;overflow: hidden;font-size:0.3rem;margin:0 auto;line-height:0.46rem;}
+.Sms_txt i{color:#e21111;}
+.Sms_copy{margin-top:0.2rem;}
+.Sms_h{text-align: center;width:100%;height:auto;color:#c32102;font-size:0.38rem;margin-bottom:0.24rem;}
+/* 背景模糊层 */
+.filter-box{
+	overflow:hidden;
+	-webkit-filter:blur(5px);
+	-moz-filter:blur(5px);
+	-ms-filter:blur(5px);
+	-o-filter:blur(5px);
+	filter:blur(5px);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');/* IE8 */
+	/*filter:url(blur.svg#blur); FireFox*/ 
+}
+
+.phoneTopTxt{
+	text-align:center;
+	font-size:0.36rem;
+	color:#000;
+	margin-bottom:0.2rem;
+	letter-spacing: 2px;
+}
+
+.phoneTopTxt font{
+	margin-top:0.2rem;
+	display: block;
+	font-size:0.32rem;
+}

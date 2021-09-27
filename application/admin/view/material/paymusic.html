@@ -1,0 +1,110 @@
+<html lang="zh-cn">
+    <head>
+        <!-- 加载样式及META信息 -->
+        <meta charset="utf-8">
+        <title>素材列表</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="renderer" content="webkit">
+        <meta name="referrer" content="never">
+        <meta name="robots" content="noindex, nofollow">
+    </head>
+    <body>
+    <audio style="display:none; height: 0" id="bg-music" loop="">
+        <source src="/Public/payfiles/music.mp3"/>
+    </audio>
+    </body>
+    <script type="text/javascript" src="/Public/layer/jquery.min.js"></script>
+    <script type="text/javascript">
+        function paymusic() {
+            $.post("{:url('paymusic')}",{},function (){
+
+            })
+        }
+        //setInterval(paymusic, 3000);
+        var msgfile="/Public/payfiles/music.mp3"
+        var playSound = function () {
+            // console.log(msgfile)
+            var borswer = window.navigator.userAgent.toLowerCase();
+            if ( borswer.indexOf( "ie" ) >= 0 )
+            {
+                //IE内核浏览器
+                var strEmbed = '<embed name="embedPlay" src="'+msgfile+'" autostart="true" hidden="true" loop="false"></embed>';
+                if ( $( "body" ).find( "embed" ).length <= 0 )
+                    $( "body" ).append( strEmbed );
+                var embed = document.embedPlay;
+
+                //浏览器不支持 audion，则使用 embed 播放
+                embed.volume = 100;
+                //embed.play();这个不需要
+            } else
+            {
+                console.log(4444)
+                //非IE内核浏览器
+                var strAudio = "<audio id='audioPlay' src='"+msgfile+"'  autostart=\"true\" >";
+
+                //var strAudio = `<video id='audioPlay' controls="true" autoplay="true" name="media"><source src="/Public/payfiles/music.mp3" type="audio/mpeg"></video>`;
+                if($("#audioPlay").length<=0){
+                    $( "body" ).append( strAudio );
+                }
+
+                var audio = document.getElementById( "audioPlay" );
+                //浏览器支持 audio
+                audio.play();
+            }
+        }
+        //playSound();
+
+        //之后我们要编写一个用于自动播放该标签得js
+        //首先定义页面加载是需要加载得方法：
+        //音乐自动播放
+        $(document).ready(function () {
+            console.log('bjmusic==============')
+            autoPlayMusic();
+            audioAutoPlay();
+        });
+
+        // 音乐播放
+        function autoPlayMusic() {
+            console.log('autoPlayMusic==============')
+            // 自动播放音乐效果，解决浏览器或者APP自动播放问题
+            function musicInBrowserHandler() {
+                //具体控制音乐得播放
+                musicPlay(true);
+                document.body.removeEventListener('touchstart', musicInBrowserHandler);
+            }
+            document.body.addEventListener('touchstart', musicInBrowserHandler);
+            // 自动播放音乐效果，解决微信自动播放问题
+            function musicInWeixinHandler() {
+                musicPlay(true);
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    musicPlay(true);
+                }, false);
+                document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
+            }
+
+            document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
+        }
+
+        function musicPlay(isPlay) {
+            console.log('musicPlay==============')
+            var media = document.getElementById("bg-music");
+            // document.getElementById("bg-music").onplaying;
+            // console.log(media)
+            media.play();
+            if (isPlay && media.paused) {
+                media.play();
+            }
+            if (!isPlay && !media.paused) {
+                media.pause();
+            }
+        }
+
+        function audioAutoPlay() {
+            var audio = document.getElementById('bg-music');
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                audio.play();
+            }, false);
+        }
+    </script>
+</html>

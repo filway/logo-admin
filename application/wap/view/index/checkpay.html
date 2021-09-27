@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="format-detection" content="telphone=no, email=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>支付成功</title>
+		<link rel="stylesheet" href="/Public/logofiles/PaySuccessfulGlobal.css">
+		<link rel="stylesheet" href="/Public/logofiles/popup_teacher.css" />
+		<script src="/Public/logofiles/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="/Public/gspayfiles/layer.js"></script>
+		<link rel="stylesheet" href="/Public/gspayfiles/layer.css">
+		<script type="text/javascript" src="/Public/logofiles/clipboard.min.js"></script>
+		<style type="text/css">
+			input::-webkit-input-placeholder{line-height:20px;}
+			.PayAfCon_img{padding: 10px 5px;border-radius: 5px;background: #fff;}
+			.PayInfo {
+			    width: 100%;
+			    overflow: hidden;
+			    background: #fff;
+			    border-radius: 5px;
+			    padding: 10px 0px;
+			}
+			.PayInfo li span {
+				    padding-left: 5px;
+				    width: 30%;
+				}
+			.PayInfo li p {width: 70%;}
+			.PayAf_title {
+			    line-height: 0.6rem;
+			    height: 0.6rem; 
+
+			}
+			.PayAfCon_BJ{padding: 0px;}
+			.PayInfo li {
+			    line-height: 0.6rem;
+			}
+			body .text-left{text-align: left;}
+		</style>
+	<body>
+
+		<?php 
+			$pay_kefuwx = $result['pay_show_wx'];
+			$pay_show_type = 1;
+		 ?>
+		<!-- filter模糊层 (模糊样式filter-Box) -->
+		<div class="filter">
+
+		<header style="color: red;">温馨提示</header>
+		<div class="PayAfter" style="padding: 0px;">
+			<div class="PayAf_con" style="background: #f1f1f1;">
+				<div class="PayAfCon_BJ">
+					<i class="PayAfCon_jiao jiso_topL"></i>
+					<i class="PayAfCon_jiao jiso_topR"></i>
+					<i class="PayAfCon_jiao jiso_bottomL"></i>
+					<i class="PayAfCon_jiao jiso_bottomR"></i>
+					<em class="PayAfCon_kuang left"></em>
+					<em class="PayAfCon_kuang right"></em>
+					<em class="PayAfCon_top top"></em>
+					<em class="PayAfCon_top bottom"></em>
+					<!-- 内容 -->
+					<!-- <div class="PayAfCon_img">
+						<img src="/Public/states/s_files/successful.png">
+						<p style="margin-bottom: 0 !important;">温馨提示!</p>
+					</div> -->
+				
+					
+					<!-- <h2 class="PayAf_title"></h2> -->
+
+					<div class="PayAfCon_img" style="margin-bottom: 20px;">
+						<ul class="PayAf_ul" style="margin-top: 20px;">
+							<li>如果您已支付，但未成跳出起名结果，请直接加老师助理微信，把支付凭证截图发给老师帮您查询。</li>
+							<li style="color: red;font-size: 18px;">老师助理{$pay_show_type? 'QQ' : '微信'}：{$pay_kefuwx}</li>
+							<li><font>老师上班时间：早上9点到下午6点。</font></li>
+							<li style="color: red;font-size: 18px;">客服热线：<a style="color: red;" href="tel:4009219675">4009219675</a>（早9点-晚9点）</li>
+						</ul>
+					</div>
+					<div class="PayAfCon_img">
+						<div class="wxCopy ">
+							<span class="wxCon" style="width:70%;"><i class="weixinNum" style="display: block;margin:0 auto;">{$pay_kefuwx}</i></span>
+							<button style="width:30%;" class="weixinCopy" data-clipboard-action="copy" data-clipboard-target=".weixinNum">复制{$pay_show_type? 'QQ' : '微信'}</button>
+						</div> 
+
+						{eq name="pay_show_type" value="0"}
+						<a href="weixin://" class="OpenWx">打开微信</a>
+						{else/}
+						<a href="mqqwpa://im/chat?chat_type=wpa&uin={$pay_kefuwx}&version=1" class="OpenWx">打开QQ</a>
+						{/eq}
+						
+
+						
+
+					</div>
+					<div style="height: 20px;"></div>
+					
+					
+					<footer class="public_footer_servers" style="margin: 0!important; text-align: center;color: #707070; background: #fff ;padding: 20px 0;margin-bottom: 20%;">
+				        <ul>
+
+				            <li style="font-size: 14px!important;">©{:date('Y')} logo设计网 全年无休</li>
+				            <li style="font-size: 14px!important;"></li>
+				            <li style="font-size: 14px!important;display:block">{$site.company_name}|网站广告支持</li>            <!--<li style="font-size: 14px!important;line-height:25px;">&lt;!&ndash;&ndash;&gt;更多测算信息、问题反馈，请联系在线客服</li>-->
+				            <li style="font-size: 14px!important;display: none;">logo设计网</li>
+				            <li style="color: rgb(179, 110, 21); font-size: 14px!important;line-height:25px;">如需帮助点此<a href="https://www16.53kf.com/m.php?cid=72182313" style="color: rgb(179, 110, 21);text-decoration: underline;"><i style="position:relative; margin: 0 18px;"><img class="erimg" src="/Public/logofiles/kefu_03.png" style="width: 24px; height: 24px;display: inline-block; font-size: 16px!important;position:absolute;bottom:0;left:-12px;top: -3px !important;"></i><span style="text-decoration: underline;">请联系专属售后客服</span></a></li>
+				                    </ul>
+				    </footer>
+
+				</div>
+			</div>
+			<div style="height: 20px;"></div>
+		
+		</div>
+		<!--  手机号弹出窗  -->
+		<div class="PhoneNum" style="display:none">
+			<div class="PN_bj"></div>
+			<div class="PN_Con">
+				<p class="phoneTopTxt">绑定手机号<br><font>请输入手机号永久保存测算结果</font></p>
+				<input type="text" name="sendPhone" id="sendPhone" placeholder="请输入您的手机号" onfocus="if(this.placeholder == &#39;请输入您的手机号&#39;){this.placeholder=&#39;&#39;}" onblur="if(this.placeholder == &#39;&#39;){this.placeholder=&#39;请输入您的手机号&#39;}">
+				<p class="tipsSelect tipsSeleOn" data-zt="1"></p>
+				<button onclick="FillPhone()">提交</button>
+			</div>
+		</div>
+
+		<style>
+			.ovfHiden{overflow: hidden;height: 100%;}
+			#dashi_wx{display:none;}
+		</style>	
+	<script type="text/javascript">
+			//copy
+		$(function(){
+			var clipboard = new ClipboardJS('.weixinCopy');
+	        clipboard.on('success', function(e) {
+	            layer.msg('复制成功');
+	            e.clearSelection();
+	        });
+	
+	        clipboard.on('error', function(e) {
+	            layer.msg("请长按{$pay_show_type? 'QQ' : '微信号'}进行复制!");
+	        });
+		})
+
+		//选择
+		function infoChoose(t,con){
+			$(t).parents('div').find('label').removeClass('on');
+			$(t).addClass('on');
+			$(con).val($(t).attr('data-num'));
+		}
+		//拷贝
+		function copyArticle(con){
+            var range = document.createRange();
+            range.selectNode(document.querySelector(con));
+            var selection = window.getSelection();
+            if(selection.rangeCount > 0) selection.removeAllRanges();
+            selection.addRange(range);
+            document.execCommand('Copy');
+            layer.msg('复制成功')
+        }
+
+		//禁止背景层滑动
+		function popwindow(box){
+			$(box).show();
+			$('html,body').attr('style','overflow:hidden;height:100%;');
+			$(box).on('touchmove',function(e){e.preventDefault();},false);
+		}
+		function window_close(box){
+			$(box).hide();
+			$('html,body').attr('style','overflow: auto;');
+			$(box).unbind('touchmove');
+		}
+	</script>
+	{include file="public/baidujs" /}
+
+</body></html>

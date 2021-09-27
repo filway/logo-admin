@@ -1,0 +1,1052 @@
+﻿html,
+body,
+div,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+p,
+menu,
+input,
+button,
+textarea,
+img,
+i,
+b,
+strong,
+em,
+span,
+table,
+tr,
+th,
+nav,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+select,
+section,
+option,
+footer {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	font-style: normal;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	-moz-tap-highlight-color: transparent;
+	tap-highlight-color: transparent
+}
+
+html {
+	font-size: 13.333vw
+}
+
+body {
+	color: #404040;
+	font-size: .28rem;
+	font-family: "微软雅黑";
+	background: #f5f5f5
+}
+
+a {
+	text-decoration: none
+}
+
+@media screen and (min-width: 750px) {
+	html,
+	body {
+		font-size: 72px;
+		max-width: 700px;
+		margin: 0 auto
+	}
+	.footer_but {
+		left: 50% !important;
+		-webkit-transform: translate(-50%, 0);
+		-moz-transform: translate(-50%, 0);
+		-o-transform: translate(-50%, 0);
+		transform: translate(-50%, 0)
+	}
+}
+
+#gsqmPayTwo {
+	width: 100%;
+	overflow: hidden
+}
+
+#gsqmPayTwo header {
+	width: 100%;
+	height: 0.88rem;
+	background: #ac0a0a;
+	color: #fff;
+	text-align: center;
+	line-height: 0.88rem;
+	font-size: 0.36rem;
+	letter-spacing: 1px
+}
+
+#gsqmPayTwo .Info {
+	width: 100%;
+	overflow: hidden;
+	padding: 0.28rem 0.24rem 0.4rem;
+	margin-bottom: 0.2rem;
+	background: #fff
+}
+
+#gsqmPayTwo .Info ul.infoCon {
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #999;
+	border-radius: 5px
+}
+
+#gsqmPayTwo .Info ul.infoCon li {
+	width: 100%;
+	overflow: hidden
+}
+
+#gsqmPayTwo .Info ul.infoCon li dl {
+	width: 100%;
+	height: auto;
+	float: left
+}
+
+#gsqmPayTwo .Info ul.infoCon li dl dt {
+	width: 100%;
+	height: auto
+}
+
+#gsqmPayTwo .Info ul.infoCon li dl dt .infoConL {
+	width: 8%;
+	height: 0.88rem;
+	float: left;
+	position: relative
+}
+
+#gsqmPayTwo .Info ul.infoCon li dl dt .infoConL::before {
+	content: '';
+	width: 0.28rem;
+	height: 0.33rem;
+	background: url(./gsqmPayIcon.png) no-repeat 0 0;
+	background-size: 1.3rem;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+}
+
+#gsqmPayTwo .Info ul.infoCon li dl dt .infoConR {
+	width: 92%;
+	float: left;
+	height: auto;
+	padding-left: 5px
+}
+
+#gsqmPayTwo .Info ul.infoCon li dl dt .infoConR p {
+	width: 100%;
+	font-size: 0.32rem;
+	line-height: 0.88rem;
+	float: left
+}
+
+#gsqmPayTwo .Info ul.infoCon li dl dt .infoConR p span {
+	letter-spacing: 2px;
+	font-weight: bold
+}
+
+#gsqmPayTwo .Info ul.infoCon li dd {
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #999;
+	padding-left: 8%
+}
+
+#gsqmPayTwo .Info ul.infoCon li dd .infoConL {
+	width: 8%;
+	height: auto;
+	float: left
+}
+
+#gsqmPayTwo .Info ul.infoCon li dd .infoConL::before {
+	content: '';
+	width: 0.28rem;
+	height: 0.33rem;
+	background: url(./gsqmPayIcon.png) no-repeat 0 0;
+	background-size: 1.3rem;
+	display: block;
+	margin: 0.28rem auto
+}
+
+#gsqmPayTwo .Info ul.infoCon li dd .infoConR {
+	width: 92%;
+	float: left;
+	height: auto;
+	padding-left: 5px
+}
+
+#gsqmPayTwo .Info ul.infoCon li dd .infoConR p {
+	width: 100%;
+	font-size: 0.28rem;
+	line-height: 0.88rem;
+	float: left
+}
+
+#gsqmPayTwo .Info ul.infoCon li:first-child {
+	border-bottom: 1px solid #999
+}
+
+#gsqmPayTwo .Info ul.infoCon li:nth-child(2) dl>dt>.infoConL::before {
+	width: 0.32rem;
+	height: 0.24rem;
+	background-position: -0.4rem 0
+}
+
+#gsqmPayTwo .Info ul.infoCon li:nth-child(3) dl>dt>.infoConL::before {
+	width: 0.32rem;
+	height: 0.26rem;
+	background-position: -0.83rem 0
+}
+
+#gsqmPayTwo .Info ul.infoCon li:last-child dd:last-child {
+	border: 0
+}
+
+#gsqmPayTwo .gsqmBaizi {
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	padding: 0 0.24rem 0.46rem;
+	margin-top: 0.2rem;
+	font-size: .3rem
+}
+
+#gsqmPayTwo .gsqmBaizi nav {
+	width: 100%;
+	height: 1rem;
+	text-align: center;
+	line-height: 1rem;
+	font-size: 0.36rem;
+	color: #333;
+	font-weight: bold;
+	letter-spacing: 1px
+}
+
+#gsqmPayTwo .gsqmBaizi nav span {
+	position: relative
+}
+
+#gsqmPayTwo .gsqmBaizi nav span::before,
+#gsqmPayTwo .gsqmBaizi nav span::after {
+	content: '';
+	width: 0.46rem;
+	height: 1px;
+	display: block;
+	position: absolute;
+	top: 51%;
+	background: #040000
+}
+
+#gsqmPayTwo .gsqmBaizi nav span::before {
+	left: -0.8rem
+}
+
+#gsqmPayTwo .gsqmBaizi nav span::after {
+	right: -0.8rem
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaizi_P {
+	width: 100%;
+	height: auto;
+	font-size: 0.32rem;
+	line-height: 0.54rem;
+	font-weight: bold
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaizideta {
+	width: 100%;
+	/*padding: 0.2rem 0;*/
+	border-bottom: 1px solid #eee
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaizideta .gsqmBaiziTable {
+	width: 100%;
+	background: #c09d65
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaizideta .gsqmBaiziTable tr td {
+	width: 20%;
+	background: #fff;
+	text-align: center;
+	padding: 0.1rem 0
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaizideta .gsqmBaiziTable tr td:first-child {
+	background: #faead1 !important;
+	color: #c43535
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaizideta .gsqmBaiziTable tr:first-child td {
+	background: #faead1;
+	color: #c43535
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaizideta .gsqmBaiziTable tr:nth-child(2) td,
+#gsqmPayTwo .gsqmBaizi .gsqmBaizideta .gsqmBaiziTable tr:nth-child(4) td,
+#gsqmPayTwo .gsqmBaizi .gsqmBaizideta .gsqmBaiziTable tr:nth-child(6) td {
+	background: #fff8ee
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaizideta .gsqmBaiziTable tr:nth-child(3) td,
+#gsqmPayTwo .gsqmBaizi .gsqmBaizideta .gsqmBaiziTable tr:nth-child(5) td,
+#gsqmPayTwo .gsqmBaizi .gsqmBaizideta .gsqmBaiziTable tr:nth-child(7) td {
+	background: #FFF
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx {
+	width: 100%;
+	height: auto
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .gsqmBaiziWx_P {
+	width: 100%;
+	line-height: 0.6rem;
+	margin-top: 0.2rem;
+	font-size: 0.32rem;
+	font-weight: bold
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 0.1rem;
+	padding-bottom: 0.1rem
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li {
+	height: .5rem;
+	font-size: 0.26rem;
+	line-height: 0.5rem;
+	width: 100%;
+	margin-bottom: 0.08rem
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li span {
+	width: .5rem;
+	height: .5rem;
+	background: #f6c700;
+	border-radius: 50%;
+	text-align: center;
+	float: left;
+	margin-right: 0.22rem;
+	-webkit-box-shadow: 1px -2px 1px 1px rgba(0, 0, 0, 0.2) inset;
+	-moz-box-shadow: 1px -2px 1px 1px rgba(0, 0, 0, 0.2) inset;
+	-ms-box-shadow: 1px -2px 1px 1px rgba(0, 0, 0, 0.2) inset;
+	box-shadow: 1px -2px 1px 1px rgba(0, 0, 0, 0.2) inset
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li .wxStatistics_tu {
+	width: 68%;
+	height: 0.28rem;
+	display: block;
+	float: left;
+	background: #e5e5e5;
+	margin: 0.14rem 0.15rem 0 0;
+	border-radius: 20px
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li .wxStatistics_tu .wxStatistics_tu_bj {
+	height: 100%;
+	border-radius: 20px;
+	background: #f6c700;
+	box-shadow: 1px -0.8px 1px 1px rgba(0, 0, 0, 0.2) inset;
+	float: left;
+	position: relative
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li .wxStatistics_tu .wxStatistics_tu_bj em {
+	width: 0.65rem;
+	height: 0.32rem;
+	background: url(./wxStatistics_tu_bj_01.png) no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	position: absolute;
+	top: -0.03rem;
+	right: -0.25rem
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li i {
+	color: #c0222d;
+	float: right
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(2) span {
+	background: #80c269
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(2) .wxStatistics_tu_bj {
+	background: #80c269
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(2) .wxStatistics_tu_bj em {
+	width: 0.33rem;
+	height: 0.4rem;
+	background: url(./wxStatistics_tu_bj_02.png) no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	position: absolute;
+	top: -0.08rem;
+	right: -0.24rem
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(3) span {
+	background: #7ecef4
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(3) .wxStatistics_tu_bj {
+	background: #7ecef4
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(3) .wxStatistics_tu_bj em {
+	width: 0.33rem;
+	height: 0.43rem;
+	background: url(./wxStatistics_tu_bj_03.png) no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	position: absolute;
+	top: -0.08rem;
+	right: -0.05rem
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(4) span {
+	background: #ec6941
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(4) .wxStatistics_tu_bj {
+	background: #ec6941
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(4) .wxStatistics_tu_bj em {
+	width: 0.33rem;
+	height: 0.43rem;
+	background: url(./wxStatistics_tu_bj_04.png) no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	position: absolute;
+	top: -0.08rem;
+	right: -0.08rem
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(5) span {
+	background: #81511c
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(5) .wxStatistics_tu_bj {
+	background: #81511c
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .wxStatistics li:nth-child(5) .wxStatistics_tu_bj em {
+	width: 0.48rem;
+	height: 0.35rem;
+	background: url(./wxStatistics_tu_bj_05.png) no-repeat;
+	background-size: 100%;
+	display: inline-block;
+	position: absolute;
+	top: -0.08rem;
+	right: -0.25rem
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .gsqmBaiziWx_Txt {
+	width: 100%;
+	height: auto;
+	padding: 0.2rem;
+	font-size: 0.26rem;
+	line-height: 0.4rem;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4)
+}
+
+#gsqmPayTwo .gsqmBaizi .gsqmBaiziWx .gsqmBaiziWx_Txt span {
+	color: #c13939
+}
+
+#gsqmPayTwo .butPayBox {
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	margin-top: 0.2rem;
+	padding: 0.15rem 0.24rem 0.07rem
+}
+
+#gsqmPayTwo .butPayBox nav {
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.36rem;
+	color: #333;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1px
+}
+
+#gsqmPayTwo .butPayBox nav span {
+	position: relative
+}
+
+#gsqmPayTwo .butPayBox nav span::before,
+#gsqmPayTwo .butPayBox nav span::after {
+	content: '';
+	width: 0.46rem;
+	height: 1px;
+	display: block;
+	position: absolute;
+	top: 51%;
+	background: #040000
+}
+
+#gsqmPayTwo .butPayBox nav span::before {
+	left: -0.8rem
+}
+
+#gsqmPayTwo .butPayBox nav span::after {
+	right: -0.8rem
+}
+
+#gsqmPayTwo .butPayBox ul {
+	width: 100%;
+	overflow: hidden
+}
+
+#gsqmPayTwo .butPayBox ul li {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 0.42rem;
+	position: relative;
+	cursor: pointer
+}
+
+#gsqmPayTwo .butPayBox ul li img {
+	width: 100%;
+	float: left
+}
+
+#gsqmPayTwo .butPayBox ul li span {
+	width: 4.82rem;
+	height: 0.8rem;
+	display: block;
+	font-size: 0.34rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.8rem;
+	background: #a82d2d;
+	border-radius: 3px;
+	position: absolute;
+	left: 50%;
+	bottom: 0.44rem;
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	transform: translate(-50%, 0)
+}
+
+#gsqmPayTwo .butPayBox ul li span i {
+	position: relative;
+	padding-left: 0.52rem
+}
+
+#gsqmPayTwo .butPayBox ul li span i::before {
+	content: '';
+	width: 0.32rem;
+	height: 0.42rem;
+	background: url(./gsqmPayIcon.png) no-repeat 0 -0.44rem;
+	background-size: 1.3rem;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%)
+}
+
+#gsqmPayTwo .discuss {
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	margin-top: 0.2rem;
+	padding: 6px 0.24rem 1.4rem
+}
+
+#gsqmPayTwo .discuss nav {
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.36rem;
+	color: #333;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1px
+}
+
+#gsqmPayTwo .discuss nav span {
+	position: relative
+}
+
+#gsqmPayTwo .discuss nav span::before,
+#gsqmPayTwo .discuss nav span::after {
+	content: '';
+	width: 0.46rem;
+	height: 1px;
+	display: block;
+	position: absolute;
+	top: 51%;
+	background: #040000
+}
+
+#gsqmPayTwo .discuss nav span::before {
+	left: -0.8rem
+}
+
+#gsqmPayTwo .discuss nav span::after {
+	right: -0.8rem
+}
+
+#gsqmPayTwo .discuss .disscussCon {
+	width: 100%;
+	height: 6.6rem;
+	overflow: hidden;
+	border: 1px solid #999;
+	border-radius: 5px
+}
+
+#gsqmPayTwo .discuss .disscussCon ul {
+	width: 100%;
+	overflow: hidden
+}
+
+#gsqmPayTwo .discuss .disscussCon ul li {
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px dashed #a13f48;
+	padding: 0.13rem 0.2rem 0.25rem;
+	font-size: 0.26rem
+}
+
+#gsqmPayTwo .discuss .disscussCon ul li p.dicTxtTop {
+	width: 100%;
+	line-height: 0.5rem;
+	color: #a13f48
+}
+
+#gsqmPayTwo .discuss .disscussCon ul li p.dicTxtCon {
+	width: 100%;
+	overflow: hidden;
+	color: #666;
+	line-height: 0.36rem
+}
+
+#gsqmPayTwo .discuss .disscussCon ul li:last-child {
+	border: 0
+}
+
+#gsqmPayTwo .footer_but {
+	width: 100%;
+	height: 0.98rem;
+	line-height: 0.98rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.36rem;
+	max-width: 700px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background: #145CB3;
+	letter-spacing: 2px;
+	display: none;
+	cursor: pointer
+}
+
+.payBox {
+	width: 100%;
+	overflow: hidden;
+	padding: 0.12rem 0.24rem 0.45rem;
+	background: #fff
+}
+
+.payBox nav {
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.36rem;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px
+}
+
+.payBox nav span {
+	position: relative
+}
+
+.payBox nav span::before {
+	content: '';
+	width: 0.46rem;
+	height: 1px;
+	background: #040000;
+	position: absolute;
+	top: 51%;
+	left: -0.8rem
+}
+
+.payBox nav span::after {
+	content: '';
+	width: 0.46rem;
+	height: 1px;
+	background: #040000;
+	position: absolute;
+	top: 51%;
+	right: -0.8rem
+}
+
+.payBox .payCon {
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #999;
+	border-radius: 5px;
+	padding: 0.4rem 0.3rem 0.32rem
+}
+
+.payBox .payCon p.payMoney {
+	width: 100%;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	font-size: 0.4rem;
+	color: #e94e36
+}
+
+.payBox .payCon p.payMoney span {
+	font-size: 0.7rem;
+	position: relative
+}
+
+.payBox .payCon p.payMoney span::before {
+	content: '';
+	width: 0.85rem;
+	height: 0.25rem;
+	background: url(./gsqmPayIcon.png) no-repeat -0.4rem -0.44rem;
+	background-size: 1.3rem;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: -0.85rem
+}
+
+.payBox .payCon del {
+	width: 100%;
+	height: auto;
+	font-size: 0.3rem;
+	color: #6e6c6b;
+	text-align: center;
+	display: block
+}
+
+.payBox .payCon .payBut {
+	width: 100%;
+	overflow: hidden;
+	max-width: 6.4rem;
+	margin: 0.3rem auto 0.48rem
+}
+
+.payBox .payCon .payBut li {
+	width: 100%;
+	height: 0.86rem;
+	background: url(./pay_but.png) no-repeat 0 -1px;
+	background-size: 6.4rem;
+	margin-bottom: 0.22rem
+}
+
+.payBox .payCon .payBut li a {
+	width: 100%;
+	height: 100%;
+	float: left;
+	display: block
+}
+
+.payBox .payCon .payBut li:first-child {
+	
+}
+
+.payBox .payCon .payZs {
+	width: 100%;
+	overflow: hidden;
+	padding: 0 0.35rem
+}
+
+.payBox .payCon .payZs img {
+	width: 100%;
+	float: left
+}
+
+.payBox .payCon .payBottomTxt {
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size: 0.24rem;
+	color: #2aa139;
+	text-align: center;
+	border-bottom: 1px dashed #dcdbdc;
+	margin-top: 7px
+}
+
+.popup_Pay {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none
+}
+
+.popup_Pay .popup_bj {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5)
+}
+
+.popup_Pay .popupCon {
+	width: 94%;
+	max-width: 640px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-transform: translate(-50%, -55%);
+	-moz-transform: translate(-50%, -55%);
+	-o-transform: translate(-50%, -55%);
+	transform: translate(-50%, -55%)
+}
+
+.popup_Pay .popupCon nav {
+	width: 100%;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	color: #333;
+	background: #ededed;
+	font-size: 0.36rem;
+	text-align: center;
+	letter-spacing: 1px;
+	position: relative;
+	margin-bottom: 0.2rem
+}
+
+.popup_Pay .popupCon nav i {
+	width: 0.28rem;
+	height: 0.28rem;
+	background: url(./popupHide.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 0.28rem;
+	right: 0.28rem;
+	cursor: pointer
+}
+
+.popup_Pay .popupCon .payCon {
+	width: 100%;
+	overflow: hidden;
+	padding: 0 0.24rem
+}
+
+.popup_Pay .popupCon .payCon p.payMoney {
+	width: 100%;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	font-size: 0.33rem;
+	color: #e94e36
+}
+
+.popup_Pay .popupCon .payCon p.payMoney span {
+	font-size: 0.6rem;
+	position: relative
+}
+
+.popup_Pay .popupCon .payCon p.payMoney span::before {
+	content: '';
+	width: 0.85rem;
+	height: 0.25rem;
+	background: url(./gsqmPayIcon.png) no-repeat -0.4rem -0.44rem;
+	background-size: 1.3rem;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: -0.85rem
+}
+
+.popup_Pay .popupCon .payCon del {
+	width: 100%;
+	height: auto;
+	font-size: 0.26rem;
+	color: #6e6c6b;
+	text-align: center;
+	display: block
+}
+
+.popup_Pay .popupCon .payCon .payBut {
+	width: 100%;
+	overflow: hidden;
+	max-width: 6.4rem;
+	margin: 0.64rem auto 0.48rem
+}
+
+.popup_Pay .popupCon .payCon .payBut li {
+	width: 100%;
+	height: 0.86rem;
+	background: url(./pay_but.png) no-repeat 0 -1px;
+	background-size: 6.4rem;
+	margin-bottom: 0.22rem
+}
+
+.popup_Pay .popupCon .payCon .payBut li a {
+	width: 100%;
+	height: 100%;
+	float: left;
+	display: block
+}
+
+.popup_Pay .popupCon .payCon .payBut li:first-child {
+	background-position: 0 -1.13rem
+}
+
+.popup_Pay .popupCon .payCon .payZs {
+	width: 100%;
+	overflow: hidden;
+	padding: 0 0.35rem
+}
+
+.popup_Pay .popupCon .payCon .payZs img {
+	width: 100%;
+	float: left
+}
+
+.popup_Pay .popupCon .payBottomTxt {
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size: 0.24rem;
+	color: #2aa139;
+	text-align: center;
+	border-bottom: 1px dashed #dcdbdc;
+	margin-top: 7px
+}
+
+.popup_Pay .popupCon .popupTipsTxt {
+	width: 100%;
+	line-height: 0.7rem;
+	font-size: 0.26rem;
+	text-align: center;
+	color: #ad342a
+}
+
+
+   .payBox .payCon {
+      position: relative;
+      /*padding:0.6rem 0.3rem 0.6rem;*/
+      overflow: initial;
+    }
+.payBox .payCon .pCchoice{
+	
+}
+.payBox .payCon .pCchoice img{
+	width: .5rem;
+	vertical-align: middle;
+	margin-right: .2rem;
+	pointer-events: none;
+	
+}
+.payBox .payCon .pCchoice p{
+	border-radius: .35rem;
+	padding: .1rem;
+	margin: .1rem 0;
+	font-size: .32rem;
+	font-weight: 600;
+  	position: relative;
+
+}
+.payBox .payCon .pCchoice p i{
+	color: #C5393A;
+	padding: 0 .1rem;
+	pointer-events: none;
+}
+.payBox .payCon .pCchoice p em{
+	border-bottom: 2px solid #C5393A;
+	pointer-events: none;
+}
+.payBox .payCon .pCchoice p.ac{
+	border: 1px solid #AC0A0A;
+	font-size: .34rem;
+}
+.payBox .payCon .pCchoice p.acbg ::after{
+	position: absolute;
+	content: "";
+	display: block;
+	width: .7rem;
+	height: .7rem;
+	background-image: url(./pt.png);
+	background-size: 100% 100%;
+	right: 0rem;
+    top: 0rem;
+}
+    @keyframes scale {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    .payBox .payCon>em {
+      position: absolute;
+      font-style: initial;
+       font-size: 20px;
+      color: #AC0A0A;
+      font-weight: 600;
+      display: block;
+      background-color: #fff;
+      padding: 0 10px;
+      animation-name: scale;
+      animation-duration: .8s;
+      animation-iteration-count: infinite;
+      animation-timing-function:ease-in-out;
+    }
+    
+    .payBox .payCon .ema {
+      top: -10px;
+      left: 4%;
+    }
+    
+    .payBox .payCon .emb {
+      bottom: -10px;
+      right: 4%;
+    }
+
+/*# sourceMappingURL=gsqmPayTwo.css.map */

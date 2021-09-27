@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="width=720,width=device-width, initial-scale=1,  initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>支付确认中</title> 
+<link rel="stylesheet" href="/Public/logofiles/popup_teacher.css" />
+<script src="/Public/logofiles/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/Public/gspayfiles/layer.js"></script>
+    <link rel="stylesheet" href="/Public/gspayfiles/layer.css">
+<link rel="stylesheet" type="text/css" href="/Public/logofiles/read_style.css"/>
+</head>
+<body>
+<style>
+html body{min-width: 1px}
+html .table_xx{width: 100%}
+body .layui-m-layercont{
+    padding: 20px 5px;
+}
+.layui-layer-btn{
+    text-align: center;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+
+    margin-right: 30px;
+}
+.layui-layer-btn a {
+    padding: 3px 30px;
+}
+
+.layui-layer-content p{
+    line-height: 30px;
+}
+body .layui-m-layerbtn span[yes] {
+    color: #37c30c;
+}
+body .layui-m-layercont p{
+    padding: 10px 0px;
+}
+.all_footer{
+    margin-bottom: 0px !important;
+}
+.notice{
+    text-align: center;padding: 5px;color: #8D1919;
+}
+.notice p{
+    line-height: 30px;
+}
+#popupTeacher .popupT_Con {
+    width: 80%;
+}
+#popupTeacher .popupT_Con .popupT_ConTop {
+    height: 60px;
+}
+
+#popupTeacher .popupT_Con .popupT_ConTop img {
+    width: 40px;
+    height: auto;
+}
+#popupTeacher .popupT_Con .popupT_ConTop p {
+    font-size: 14px;
+}
+#popupTeacher .popupT_Con .popupT_ConTop i {
+    width: 25px;
+    height: 25px;
+}
+#popupTeacher .popupT_Con .popupWx {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    margin: 15px auto;
+}
+#popupTeacher .popupT_Con .popupWx p {
+    width: 80%;
+    height: 100%;
+    font-size: 16px;
+}
+
+#popupTeacher .popupT_Con .popupWx button {
+    width: 18%;
+    font-size: 16px;
+    height: 37px;
+}
+#popupTeacher .popupT_Con .popupWxShow {
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+}
+#popupTeacher .popupT_Con .popupText {
+    margin: 15px auto;
+}
+</style>
+
+
+
+
+
+
+
+
+<div class="main" style="padding-top: 0px;">
+
+
+
+<div class="container" style="width: 100%">
+
+
+
+    <div class="table_bg"  >
+
+
+
+        <div class="table_xx">
+
+
+
+            <div class="title"> 温馨提醒</div>
+
+
+
+            <div style='padding:50px;text-align:left;width:90%;margin:0 auto'>     
+
+
+                    <div class="item">
+
+
+
+                        <label>订单号：</label>
+
+
+
+                        <span>{$result.order_no}</span>
+
+
+
+                    </div><br>
+
+                    <div class="item" style="color: red;">
+
+                        支付状态确定中......<span id="timecount">15</span>s
+
+                        <br>
+
+                        <br>
+
+                        请不要关闭页面
+                    </div>
+            </div>
+
+            <!-- <div id="kf_message" class="kf_message laoshiweixin" style="width:14%;max-width:75px;position: fixed;bottom: 20%;right: 2%;z-index:1000;">
+                <div><img style="width:100%" src="/Public/gspayfiles/contact_weixin_green.gif">
+                </div>
+            </div> -->
+            <div class="notice">
+                <p style="font-size: 25px;">提别提醒</p>
+                <p>若倒计时结束，该页面没有成功跳转，请截图，然后拨打我们客服热线:<a style="color: #8D1919;" href="tel:4009219675">4009219675</a></p>
+                <p>人工接听时间:早9点-晚6点</p>
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- <img src="/pstyle/paystyle10/images/left.jpg" class="left"/>
+
+
+
+        <img src="/pstyle/paystyle10/images/right.jpg" class="right"/> -->
+
+
+
+    </div>
+
+
+
+
+
+    <div class="wxPayBox2" style="width: 100%;display: none; height: 100vh; position: fixed; top: 0px; left: 0px; z-index: 2018613;"><div class="tz_load2" style="width: 100%;height: 100vh;position: fixed;top: 0;left:0;background: rgba(0,0,0,0.4);z-index:66666;display:block;"><div class="payLoad" style="width: 80%;height: 180px;background-color: white;opacity: 1;border-radius: 10px;text-align: center;position:absolute;left:50%;top:50%;-webkit-transform: translate(-50%,-60%);-moz-transform: translate(-50%,-60%);transform: translate(-50%,-60%);"><div style="margin:auto auto;height: auto;"><p style="height: 60px;border-bottom: 1px solid lightgrey;line-height: 60px;font-size: medium;"><b>请确认微信支付是否已完成</b></p><p onclick="checkorder(1)" style="height: 60px;border-bottom: 1px solid lightgrey;line-height: 60px;color: red;font-size: large;"><b>已完成支付</b></p><p onclick="updatOrder(0)" style="height: 60px;line-height: 60px;">支付遇到问题，重新支付</p></div></div></div></div>
+
+
+
+</div>  
+
+
+<style type="text/css">
+    .laoshiweixin{width:1.12rem;height:1.18rem;position:fixed;bottom:120px;right:0;z-index: 2018723;}
+    .laoshiweixin img{width:100%;float: left;}
+</style>
+<script type="text/javascript" src="/Public/logofiles/clipboard.min.js"></script>
+<script type="text/javascript" src="/Public/logofiles/popup_teacher.js"></script>
+
+<script>   
+
+
+
+$(function(){
+
+    $(".container").height($(window).height());
+
+    $(".table_xx").height($(window).height());
+    //var teacher=new popupTeacher().init('.laoshiweixin','{$kefu_wx}','/Public/wap/images/', '{$site.wap_wx_head}');
+
+})
+
+
+
+var sn = '{$result.order_no}';
+var type = 1;
+
+var t = 15;
+var inter;
+function timefun() {
+    if(type!=2 && t==15) {
+        checkorders();
+    }
+    t--;
+    $("#timecount").html(t);
+    if(t <= 0) {
+        console.log(123)
+        clearInterval(inter);
+        if (type==2) {
+            window.location.href="/wap/index/payResult/sn/"+sn+".html"
+            return;
+        }
+        var content = '<div>'
+
+               +'<h5 style="color:#37c30c;text-align:center;">支付确认</h5>'
+
+               +'<p style="text-align:left;">1.如果您已支付请点击【已支付】查看您的支付结果</p>'
+
+               +'<p style="text-align:left;">2.如果您未支付请点击【未支付】完成支付</p>'
+
+           +'</div>';
+          layer.open({
+            content: content,
+                title:false,
+                closeBtn:false,
+                btn: ['已支付', '未支付'],
+                shadeClose:false,
+                yes: function(index){
+                  layer.close(index);
+                  window.location.href="/wap/index/payResult/sn/"+sn+".html"
+              },
+              btn2:function(index){
+                layer.close(index);
+                window.location.href="/wap/index/pay/sn/"+sn+".html"
+            }
+        });
+    }
+}
+
+ inter = setInterval("timefun()", 1000);
+
+
+
+var tourl="{:url('index/pay',array('sn'=> $result.order_no))}";
+
+console.log(tourl);
+
+$('#showdetail').click(function(){
+    location.href=tourl;
+})
+
+var checknum = 0;
+function checkorders(){
+    setTimeout(function(){
+        $.get("{:url('/wap/index/checkStatus', array('pay_method'=>'paystatus'))}?sn={$result.order_no}",function(d){
+            layer.closeAll();
+            if(d.code==1){
+                location.href= tourl;
+            }
+            else {
+                if(checknum<4) {
+                    setTimeout(function() {
+                        checknum++;
+                        checkorders();
+                    },3000);
+                }
+            }
+        }, 'json');
+    },100);
+}
+</script>
+    {include file="public/baidujs" /}
+</div>
+</body>
+</html>

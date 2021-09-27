@@ -1,0 +1,312 @@
+/*公共样式*/
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	-webkit-overflow-scrolling: touch;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+div,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+span,
+i,
+em,
+strong,
+button,
+table,
+textarea,
+input,
+b,
+nav,
+footer,
+form,
+frame,
+img,
+select {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	outline: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-style: normal;
+	text-underline: none;
+	font-family: fontPF;
+}
+textarea,
+input,
+button{
+	background-color: transparent;
+}
+html {
+	-webkit-overflow-scrolling: touch;
+}
+body {
+	background: #fff;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	max-width: 750px;
+	margin: 0 auto;
+	position: relative;
+	visibility: hidden;
+	font-family: fontPF;
+}
+ul,
+ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #666;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+a:hover {
+	text-decoration: none
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.Clearbox:after,
+.Clearbox:before {
+	display: block;
+	content: "";
+	height: 0;
+	clear: both;
+	width: 0;
+}
+
+.Container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.flexDirVert {
+	flex-direction: column;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+}
+
+.flexDirVertRev {
+	flex-direction: column-reverse;
+	-ms-flex-direction: column-reverse;
+	-webkit-flex-direction: column-reverse;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	-moz-box-direction: reverse;
+	-webkit-box-direction: reverse;
+}
+
+.flexDirRow {
+	flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-flex-direction: row;
+	-moz-box-orient: horizontal;
+	-webkit-box-orient: horizontal;
+}
+
+.flexDirRowRev {
+	flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	-webkit-flex-direction: row-reverse;
+	-moz-box-orient: horizontal;
+	-webkit-box-orient: horizontal;
+	-moz-box-direction: reverse;
+	-webkit-box-direction: reverse;
+}
+
+
+/*一行放不下如何换行 flex-wrap:nowrap(默认值，不换行)*/
+
+.flexNoWrap {
+	-ms-flex-wrap: nowrap;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-lines: single;
+	box-lines: single;
+}
+
+
+/*换行显示*/
+
+.flexNoWrap {
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-webkit-box-lines: multiple;
+}
+
+
+/*换行，第一行在下方*/
+
+.flexNoWrapRev {
+	flex-wrap: wrap-reverse;
+	-ms-flex-wrap: wrap-reverse;
+	-webkit-flex-wrap: wrap-reverse;
+}
+
+
+/*在X轴上的对齐方式 默认:flex-start*/
+
+
+/*左对齐*/
+
+.flexXLeft {
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	-moz-box-pack: start;
+	-webkit-box-pack: start;
+	box-pack: start;
+}
+
+
+/*右对齐*/
+
+.flexXRight {
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	-moz-box-pack: end;
+	-webkit-box-pack: end;
+	box-pack: end;
+}
+
+
+/*居中对齐*/
+
+.flexXCenter {
+	justify-content: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-webkit-box-pack: center;
+	box-pack: center;
+}
+
+
+/*两端对齐*/
+
+.flexXBetween {
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-box-pack: justify;
+	-webkit-box-pack: justify;
+	box-pack: justify;
+}
+
+
+/*每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍*/
+
+.flexXAround {
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+
+
+/*在Y轴上的对齐方式 */
+
+
+/*顶端对齐*/
+
+.flexYStart {
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+	-moz-box-align: start;
+	-webkit-box-align: start;
+	box-align: start;
+}
+
+
+/*底部对齐*/
+
+.flexYEnd {
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+	-moz-box-align: end;
+	-webkit-box-align: end;
+	box-align: end;
+}
+
+
+/*垂直居中对齐*/
+
+.flexYCenter {
+	-webkit-align-items: center;
+	align-items: center;
+	-moz-box-align: center;
+	-webkit-box-align: center;
+	box-align: center;
+}
+
+
+/*拉伸*/
+
+.flexYStretch {
+	-webkit-align-items: stretch;
+	align-items: stretch;
+	-moz-box-align: stretch;
+	-webkit-box-align: stretch;
+	box-align: stretch;
+}
+
+
+/*基线对齐*/
+
+.flexYBase {
+	-webkit-align-items: baseline;
+	align-items: baseline;
+	-moz-box-align: baseline;
+	-webkit-box-align: baseline;
+	box-align: baseline;
+}
+
+
+/*多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用*/
+
+
+/*align-content:flex-start\flex-end\center\space-between\space-around\stretch*/
+
+
+/*子元素自动分配空间*/
+
+.flexChild1 {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}

@@ -1,0 +1,9 @@
+后台：http://logo.com/YBTproUIGF.php
+
+账号：admin
+密码：admin_logo
+
+
+数据库：
+logo_com
+logo_com_pwd
